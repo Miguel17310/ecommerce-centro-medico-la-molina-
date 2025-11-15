@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Centro Médico La Molina</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/dseuz64lm/image/upload/fl_preserve_transparency/v1763163734/centro_medico_la_molina_logo_zm70rd.jpg?_s=public-apps" alt="Centro Médico La Molina Logo">
+                <h1>Centro Médico La Molina</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+                <a href="#" class="cart-icon">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-page">
+            <div class="container">
+                <h2>Tu Carrito de Compras</h2>
+                <div class="cart-items" id="cart-items">
+                    <!-- Los items del carrito se cargarán dinámicamente -->
+                </div>
+                <div class="cart-summary">
+                    <h3 id="cart-total">Total: S/. 0.00</h3>
+                    <button id="clear-cart" class="btn-secondary">Vaciar Carrito</button>
+                    <a href="pago.html" class="btn-primary">Proceder al Pago</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Centro Médico La Molina. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

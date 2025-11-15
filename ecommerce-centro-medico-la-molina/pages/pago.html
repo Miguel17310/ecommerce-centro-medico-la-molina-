@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con Yape - Centro Médico La Molina</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .payment-page {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 80vh;
+        }
+        .payment-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .payment-info {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+        .payment-info h3 {
+            color: #2c3e50;
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .payment-info p {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #34495e;
+        }
+        .qr-code {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .qr-code img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .qr-code p {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+        .payment-actions {
+            text-align: center;
+        }
+        .btn-primary, .btn-secondary {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #27ae60;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #229954;
+        }
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/dseuz64lm/image/upload/fl_preserve_transparency/v1763163734/centro_medico_la_molina_logo_zm70rd.jpg?_s=public-apps" alt="Centro Médico La Molina Logo">
+                <h1>Centro Médico La Molina</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+                <a href="carrito.html" class="cart-icon">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-page">
+            <div class="container">
+                <h2 style="text-align: center; color: #2c3e50; font-family: 'Arial', sans-serif; font-size: 32px; margin-bottom: 40px;">Pagar con Yape</h2>
+                <div class="payment-content">
+                    <div class="payment-info">
+                        <h3>Información del Pago</h3>
+                        <p><strong>Total a Pagar:</strong> S/. 25.00</p>
+                        <p>Escanea el código QR con tu aplicación Yape para completar el pago.</p>
+                        <p>Una vez realizado el pago, envíanos una captura de pantalla al WhatsApp: +51 923 347 751</p>
+                    </div>
+                    <div class="qr-code">
+                        <img src="https://res.cloudinary.com/dseuz64lm/image/upload/fl_preserve_transparency/v1763164829/E7FE4ZcWUAo7fqL_egrvus.jpg?_s=public-apps" alt="QR Code Yape">
+                        <p>Escanea aquí</p>
+                    </div>
+                </div>
+                <div class="payment-actions">
+                    <button class="btn-secondary" onclick="window.history.back()">Volver al Carrito</button>
+                    <button class="btn-primary" onclick="alert('Gracias por confirmar su pago, nos comunicaremos en la brevedad posible con usted via WhatsApp')">Confirmar Pago</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Centro Médico La Molina. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
