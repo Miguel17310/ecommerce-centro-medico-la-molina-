@@ -1,0 +1,12 @@
+# Ignore all files by default
+*
+
+# Allow only the ecommerce project directory
+!ecommerce-centro-medico-la-molina/
+
+# Allow all files and subdirectories within the ecommerce project
+ecommerce-centro-medico-la-molina/**
+
+# Ignore specific files within the project if needed (uncomment and modify as necessary)
+# ecommerce-centro-medico-la-molina/node_modules/
+# ecommerce-centro-medico-la-molina/.env
