@@ -7,6 +7,14 @@
 # Allow all files and subdirectories within the ecommerce project
 ecommerce-centro-medico-la-molina/**
 
-# Ignore specific files within the project if needed (uncomment and modify as necessary)
+# Allow backend directory
+!backend/
+
+# Allow all files and subdirectories within the backend
+backend/**
+
+# Ignore specific files within the projects
 # ecommerce-centro-medico-la-molina/node_modules/
 # ecommerce-centro-medico-la-molina/.env
+backend/node_modules/
+backend/.env
